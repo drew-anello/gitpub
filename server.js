@@ -1,13 +1,13 @@
-const express = express()
-const port = 3000
+const express = require('express')
 const app = express()
+const port = 3000
 
 
-app.get("/fruits/", (req, res) => {
-    res.send(fruits)
+app.get('/', (req, res) => {
+    res.send('Welcome to the Gitpub App!')
+
 })
 
 
-app.listen(3000, () => {
-    console.log("listening")
-})
+app.listen(port)
+console.log('up and running in port', port)
