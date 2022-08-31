@@ -39,3 +39,5 @@ price: 56,
 image: 'https://i.imgur.com/MbVdwZz',
 },
 ]
+
+module.exports = drinks
