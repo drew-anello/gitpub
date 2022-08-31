@@ -22,11 +22,6 @@ app.get("/drinks/:id", (req, res) => {
         drink: drinks[req.params.id],
     });
 });
-app.get("/drinks/:id", (req, res) => {
-    res.send('drinks_show.ejs', {
-        drink: drinks[req.params.id],
-    });
-});
 
 app.listen(port)
 console.log('up and running in port', port)
