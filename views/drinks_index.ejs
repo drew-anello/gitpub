@@ -16,6 +16,14 @@
             background-color: papayawhip;
         }
     </style>
+    <h3>DRINKS</h3>
+    <ul>
+        <% for(let i=0; i < drinks.length; i++){%>
+        <li>
+            <a href="/drinks/<%=i%>"><%=drinks[i].name %></a>
+        </li>
+    <% } %>
+    </ul>
 
 </body>
 
